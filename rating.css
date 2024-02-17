@@ -1,0 +1,28 @@
+#by{
+    position: absolute;
+    left: 550px;
+    top: 200px;
+    width: 210px;
+    height: 210px;
+}
+
+#Bn{
+    position: absolute;
+    left: 550px;
+    top: 290px;
+    width: 210px;
+    height: 210px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(128, 22, 209);
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(nana.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+

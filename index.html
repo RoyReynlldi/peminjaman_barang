@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.royslebew.com</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="log.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="overlay"></div>
+        <form id="target" action="dashboard.html" class="box">
+            <div class="header">
+                <h4>login to your account</h4>
+                <p>WEB LOGIN BY ROY GANTENG </p>
+            </div>
+            <div class="login-area">
+                <input name="username" type="text" class="username" placeholder="username">
+                <input name="password" type="password"  class="password" placeholder="password">
+                <input type="submit" value="Login" class="submit">
+                <a href="fpas.html"> create account</a>
+            </div>
+        </form>
+        <script>
+            $( "#target" ).submit(function( event ) {
+                event.preventDefault();
+                const form = document.querySelector('form');
+                const data = Object.fromEntries(new FormData(form).entries());
+                if(data.username === 'roy' && data.password === 'roy') {
+                    window.location.href="dashboard.html";
+                }else if(data.username === '' && data.password === '') {
+                    alert('TIDAK BOLEH KOSONG')
+                }else {
+                    alert('GAGAL!');
+                }
+            });
+        </script>
+</body>
+</html>
